@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #d3ab35;
+    --secundario: #3a2402;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main {
+    width: 80%;
+    height: 80%;
+    border-radius: 1rem;
+
+    display: flex;
+}
+
+.view {
+    /* background-color: red; */
+    flex-basis: 60%;
+    backdrop-filter: blur(0.5rem);
+    position: relative;
+}
+
+.details {
+    /* background-color: blue; */
+    flex-basis: 40%;
+    backdrop-filter: blur(1.5rem);
+    z-index: -1;
+}
+
+img {
+    width: 38rem;
+    position: absolute;
+    right: -56px;
+    top: 60px;
+}
+
+h1 {
+    color: var(--primario);
+}
+
+p {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--secundario);
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: var(--primario);
+    color: var(--secundario);
+    border: none;
+    border-radius: 2.5rem;
+    font-weight: bold;
+}
